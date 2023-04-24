@@ -1,0 +1,30 @@
+POST http://localhost:3001/api/users/signup
+Content-Type: application/json
+
+{
+  "username": "jac3232k123",
+  "password": "password"
+}
+
+###
+GET http://localhost:3001/api/users
+
+###
+
+POST http://localhost:3001/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "jack",
+  "password": "password"
+}
+
+###
+GET http://localhost:3001/api/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJqYWNrIiwiaWF0IjoxNjgyMDc1MjAxLCJleHAiOjE2ODIwNzYxMDF9.s9cIdG-b4Hl3bOw13Vo4HGoRb5G9RSBBFVRFXHN2xUY
+
+###
+GET http://localhost:3001/api/auth/refreshtoken
+
+###
+DELETE http://localhost:3001/api/auth/refreshtoken

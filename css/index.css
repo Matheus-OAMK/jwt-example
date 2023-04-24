@@ -1,0 +1,7 @@
+:root {
+  --main-color: #007bff;
+}
+
+.title {
+  color: var(--main-color);
+}
